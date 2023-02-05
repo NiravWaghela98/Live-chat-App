@@ -23,18 +23,13 @@ const append = (message,position)=>{
     messageElement.classList.add('message');
     messageElement.classList.add(position);
     messageContainer.append(messageElement);
-    // if (message.includes('user-joined',name)) {
-    //     audio.play();
-    //   } else if (message.includes('left')) {
-    //     audio2.play();
-    //   }
-        
-        
+    
+            
         
     }
     
     // ask new user for his/her name let the server know 
-    // const name = prompt('Enter Your Name To Join');
+    const name = prompt('Enter Your Name To Join');
     socket.emit('new-user-joined', name);
     
     // if a new user joins, let the server know
@@ -92,6 +87,7 @@ socket.on("file-data", function(file) {
       video.autoplay = true;
       document.body.appendChild(video);
     }
+  })
   
 
 
