@@ -1,0 +1,192 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: radial-gradient(ellipse at 20% 20%, #35234b 0%, transparent 70%),
+        radial-gradient(ellipse at 60% 20%, #2975bf 0%, transparent 70%),
+        radial-gradient(ellipse at 100% 20%, #3d54b1 0%, transparent 70%),
+        radial-gradient(ellipse at 100% 100%, #9f3c54 0%, transparent 70%),
+        radial-gradient(ellipse at 20% 100%, #362d6f 0%, transparent 70%);
+    background-blend-mode: screen;
+    height: 200vh;
+
+}
+
+/* Logo img */
+.logo {
+    display: block;
+    margin: auto;
+    width: 80px;
+
+}
+
+h1 {
+    margin: 12px 10px;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: white;
+}
+
+/* container message  */
+.container {
+    background: url(img/container.jpeg)no-repeat center center/cover ;
+    opacity: 0.8;
+    max-width: 955px;
+    /* background-color: red; */
+    /* border: 2px solid black; */
+    margin: auto;
+    height: 60vh;
+    padding: 33px;
+    overflow-y: auto;
+    margin-bottom: 23px;
+    border-radius: 20px;
+}
+
+.message {
+    background: rgb(89 94 154);
+    width: 24%;
+    padding: 10px;
+    margin: 17px 2px;
+    border: 2px solid black;
+    border-radius: 10px;
+
+}
+
+.left {
+    float: left;
+    clear: both;
+    color: white;
+
+}
+
+.right {
+    float: right;
+    clear: both;
+    color: white;
+
+}
+
+/* Send */
+
+#send-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    right: 92px;
+}
+
+#messageInp {
+    width: 31%;
+    background: black;
+    color: white;
+    outline: none;
+    border-radius: 10px;
+}
+
+.btn {
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 34px;
+    width: 83px;
+    margin: 0px 10px;
+    background: black;
+    color: white;
+    outline: none;
+    position: relative;
+    left: 167px;
+}
+
+/* send img video */
+.send-img-vid input[type="file"] {
+    /* Hide the default button */
+    display: none;
+  }
+
+  .custom-button{
+    position: relative;
+    left: 59%;
+    bottom: 33px;
+    height: 34px;
+    width: 118px;
+    margin: 0px 10px;
+    background: black;
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    
+  }
+
+
+
+
+
+@media (min-width:200px) and (max-width:520px) {
+
+    #send-container {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        right: 29px;
+    }
+
+    #messageInp {
+        width: 44%;
+        background: black;
+        color: white;
+        outline: none;
+        border-radius: 10px;
+        border: none;
+
+    }
+
+    .container {
+        max-width: 284px;
+
+    }
+
+    body {
+        height: 120vh;
+    }
+
+    .message {
+       
+        width: 40%;
+        padding: 9px;
+        margin: 8px 2px;
+        font-size: 15px;
+    }
+    .btn {
+        cursor: pointer;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 34px;
+    width: 45px;
+    margin: 0px 10px;
+    background: black;
+    color: white;
+    outline: none;
+    position: relative;
+    left: 91px;
+    font-size: 10px;
+    }
+
+    .custom-button {
+    position: relative;
+    left: 60%;
+    bottom: 35px;
+    height: 35px;
+    width: 75px;
+    margin: 0px 0px;
+    background: black;
+    color: white;
+    border-radius: 10px;
+    font-size: 10px;
+    outline: none;
+    cursor: pointer;
+    }
+}
